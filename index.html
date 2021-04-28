@@ -1,1 +1,190 @@
-Hello, World!
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Thomas Nielsen - Computer Engineer Student</title>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   <meta name="description" content="I am a Bachelor student of Computer engineering at University of Agder.">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="skillbar.css">
+   <link rel="stylesheet" href="responsive.css">
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="script.js"></script>
+   <script src="viewport-units-buggyfill.js"></script>
+   <script>window.viewportUnitsBuggyfill.init();</script>
+   <link rel="icon" href="favicon_io/favicon-16x16.png">
+</head>
+
+<body>
+   <div id="menu" class="menu">
+      <ul id="navbar">
+         <li><a class="active" href="#home_page" onclick="responsiveMenu()">Home</a></li>
+         <li><a href="#about_page" onclick="responsiveMenu()">About</a></li>
+      </ul>
+   </div>
+   <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+      <img src="favicon_io/menu_black_24dp.svg">
+   </a>
+   <div id="home_page">
+      <h1>Thomas Nielsen</h1>
+      <h1 style="display: none !important">Computer Engineer Student</h1>
+      <h2>
+         <a class="typewrite" data-period="2000"
+            data-type='["Majoring in Computer Engineering.", "University of Agder class of 2020 undergraduate.", "Subject area in networking and security.", "A real life Demon Hunter.", "Junior Developer.", "A Taco Lover!" ]'>
+         </a>
+      </h2>
+      <p style="padding-top: 70px;">
+         [ A work in progress ]
+      </p>
+      <div id="social-table">
+         <ul, id="social">
+            <li>
+               <a href="https://github.com/nielth" class="fab fa-github"></a>
+            </li>
+            <li>
+               <a href="https://www.instagram.com/nielth_/" class="fab fa-instagram"></a>
+            </li>
+            <li>
+               <a href="mailto:thomas.nielsen98@gmail.com" class="fa fa-envelope"></a>
+            </li>
+            <li>
+               <a href="#" class="fab fa-linkedin"></a>
+            </li>
+            </ul>
+      </div>
+
+   </div>
+   <div id="about_page">
+      <div class="row">
+         <div class="column" id="about-column-left">
+            <h2>About</h2>
+         </div>
+         <div class="column" id="hidden-column-left"></div>
+         <div class="column" id="about-column-right">
+            <div id="about-text">
+               <h3>About</h3>
+               <p>I'm a Universtity of Agder class of 2020 undergraduate majoring in Computer enginnering with a
+                  subject area in networking and security. My primary interest lies in cybersecurity,
+                  cryptography, operation of computer systems, mathematics, backend development and low-level
+                  programming languages.
+               </p>
+               <p>
+                  I have always had a big passion for computers. Without knowing the application of it back in middle
+                  and high school, I started learning about the
+                  basics of networking. Everything from learning how to bruteforce (for legal
+                  reasons) our WLAN password.
+                  To opening connections to our public IP at home so I could host my own server on Call of Duty for no
+                  latency,
+                  or to host a personal Minecraft server on an retired desktop in the garage so me and my friends could
+                  all
+                  play together.
+               </p>
+               </p>
+               <br>
+               <div class="skill-bars">
+                  <div class="bar">
+                     <div class="info">
+                        <span>Python</span>
+                     </div>
+                     <div class="progress-line" id="progress-line-python">
+                        <span></span>
+                     </div>
+                  </div>
+                  <div class="bar">
+                     <div class="info">
+                        <span>C/C++</span>
+                     </div>
+                     <div class="progress-line" id="progress-line-c-cpp">
+                        <span></span>
+                     </div>
+                  </div>
+                  <div class="bar">
+                     <div class="info">
+                        <span>Unix Shell</span>
+                     </div>
+                     <div class="progress-line" id="progress-line-unix">
+                        <span></span>
+                     </div>
+                  </div>
+                  <div class="bar">
+                     <div class="info">
+                        <span>HTML</span>
+                     </div>
+                     <div class="progress-line" id="progress-line-html">
+                        <span></span>
+                     </div>
+                  </div>
+                  <div class="bar">
+                     <div class="info">
+                        <span>CSS</span>
+                     </div>
+                     <div class="progress-line" id="progress-line-css">
+                        <span></span>
+                     </div>
+                  </div>
+               </div>
+               <h3>My skills</h3>
+               <h4>Programming</h4>
+               <p>
+                  I have had experience in different types of languages, frameworks, databases, embedded systems etc.
+                  This involves use of language libraries, matrices, mbed-os and Arduino controllers, file managment and
+                  memory allocation for lower-level languages like C and C++. As well as object-oriented programming
+                  in languages as Python.
+               </p>
+               <h4>Networking</h4>
+               <p>
+                  I've been working with network equipment and are comfortable with both the hardware and the software
+                  part of it.
+                  This include how to build a network in design, planning, installation, configuration and operation on
+                  network,
+                  as well as being able to assess vulnerabilities and security measures.
+               </p>
+               <h4>Mathematics</h4>
+               <p>
+                  The math involved in my degree to date is about engineering applications of mathematics. Such as
+                  differential and integral calculus, complex numbers, applications for taylor series, and solving
+                  problems with
+                  the usage of analythical methods. Continuing to Linear algebra and more advanced differential
+                  equations.
+               </p>
+               <p>
+                  As well as discrete mathematics focusing on more computer related math like logic, number theory,
+                  graph theory,
+                  probability and binary tree data structure, as well as their application.
+               </p>
+               <p style="padding-top: 70px; text-align: center;">
+                  <b>Thomas Nielsen</b>
+                  <br>
+                  <a href="mailto:thomas.nielsen98@gmail.com">thomas.nielsen98@gmail.com</a>
+               </p>
+               <ul, id="social" style="display: flex; justify-content: center; margin-top: 10px;">
+                  <li>
+                     <a href="https://github.com/nielth" class="fab fa-github"></a>
+                  </li>
+                  <li>
+                     <a href="https://www.instagram.com/nielth_/" class="fab fa-instagram"></a>
+                  </li>
+                  <li>
+                     <a href="mailto:thomas.nielsen98@gmail.com" class="fa fa-envelope"></a>
+                  </li>
+                  <li>
+                     <a href="#" class="fab fa-linkedin"></a>
+                  </li>
+                  </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+<script>
+   viewportUnitsBuggyfill.init({
+      force: true, // use for debug on desktop
+      refreshDebounceWait: 300 // good for performance
+   });
+</script>
+
+</html>
