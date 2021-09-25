@@ -1,2 +1,2 @@
 # website
-https://nielth.com/
+https://nielth.github.io/
